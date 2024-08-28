@@ -1,0 +1,10 @@
+*.bak
+*.jpg
+*.jpeg
+*.pdf
+*.webp
+*.pyc
+*.png
+*.txt
+
+#Directorios
