@@ -1,11 +1,13 @@
 # Daily Routine
 from coffee import *
 
-while coffeePot.Level() > 0:
+# Daily Routine
+while coffeePouch.Level() > 0:
     if coffeeCup.Empty():
-        coffeeCup.Fill(coffeePot)
+        coffeeCup.Fill(coffeeMachine.Brew())
 
-    coffeeCup.Drink()
-    work.GetSomeStDone()
-    
+    me.DrinkCoffee(coffeeCup.Dispense())
+    me.GetSomeShitDone()
+
 me.GetAngry()
+
