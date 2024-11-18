@@ -9,15 +9,16 @@ print()
 try:
     print()
     inputFile = input("Nombre del archivo de carga: ")
+    if inputFile == "":
+        inputFile = "input"
+        
     mainMatrix = getFileData(inputFile)
     print()
     print("Procesando información 🔥")
     print()
-    result = getMB(mainMatrix)
-    print("Valor de M: " + str(result[0]))
-    print("Valor de B: " + str(result[1]))
+    getMB(mainMatrix)
+    matrixPlot(mainMatrix)
     
-            
 except:
     print()
     print("Something went wrong...")
