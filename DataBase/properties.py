@@ -1,0 +1,2 @@
+
+dataBaseName = "myMetallum.db"
